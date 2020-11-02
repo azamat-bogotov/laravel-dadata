@@ -175,7 +175,7 @@ class ClientSuggest
      * @param string $method
      * @return mixed
      */
-    private function query($url, array $params = [], $method = self::METHOD_POST)
+    protected function query($url, array $params = [], $method = self::METHOD_POST)
     {
 
         if (empty($params['query'])) {
